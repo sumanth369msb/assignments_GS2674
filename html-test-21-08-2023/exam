@@ -1,3 +1,6 @@
+Question 1:
+
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -61,3 +64,47 @@ transition: transform 0.3s ease;
   </div>
 </body>
 </html>
+
+
+Question 2:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> Registration Form </title>
+</head>
+<body>
+    <h1>Forms</h1>
+    <form class="form" method="post">
+        <div class="container">
+        	<div class="y6">
+			<input type="text" name="fname" placeholder="first name" required autofocus /><br>
+		</div>
+        <input type="text" name="lname" placeholder="last name" /><br>
+        <input type="date" name="date" /> <br>
+        <input type="tel" name="mobile" required placeholder="eg:9876543210" /><br>
+        <input type="email" name="email" required placeholder="eg:abc123@gmail.com" /> <br>
+        <input type="number" name=age min="10" max="100" placeholder="Age" required /><br>
+        <input type="password" name="password" placeholder="enter your password"/> <br>
+        <select name="country">
+            <option value="0">Please select an option</option>
+            <option value="1">India</option>
+            <option value="2">Germany</option>
+            <option value="3">ENgland</option>
+            <option value="4">China</option>
+            <option value="5">Korea</option>
+            <option value="6">Japan</option>
+</select><br>
+        <input type="checkbox" name="Btech" />Btech<br>
+        <input type="checkbox" name="Mtech" />Mtech<br>
+        <input type="checkbox" name="MBA" />MBA
+        <br>
+        <input type="radio" name="gander" value="male" />Male
+        <input type="radio" name="gender" value="female" />Female<br>
+        <button class= "submit" type="submit"> Submit </button>
+        <button class="reset" type="Reset"> Reset </button> <br>
+    </div>
+    </form>
+</body>
+</html>
+
