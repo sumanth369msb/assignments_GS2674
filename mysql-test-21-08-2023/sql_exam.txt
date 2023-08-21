@@ -1,0 +1,29 @@
+Question 1:
+  
+
+select * from employee e inner join department d on e.deptno=d.deptno inner join address a on d.address_id=a.address_id;
+
+
+Question 2:
+  
+
+create table bankaccount(acc_no int primary key, acc_opened_date date, status text, balance double);
+
+create table transaction(acc_no int, trans_type text, trans_date date, trans_amount double,foriegn key(acc_no) references bankaccount(acc_no));
+
+insert into bankaccount values (001, sysdate(), "opened", 98634.32),(002, sysdate(), "opened", 0.00),(003, sysdate(), "opened", 5432.32),
+(004, sysdate(), "opened", 1500),(005, sysdate(), "opened", 33000,(006, sysdate(), "opened", 0.00),(007, sysdate(), "opened", 1936383.54);
+
+insert into transaction values (001, "D", sysdate(), 100),(002, "D", sysdate(), 800),(003, "W", sysdate(), 9000),
+(004, "W", sysdate(), 1500),(005, "D, sysdate(), 4000),(006, "W", sysdate(), 563),(007, "D", sysdate(), 100000);
+
+delete * from bankaccount;
+  
+
+Question 3:
+
+
+i) select manager_name, sum(emp_sal) as total_dept_sal group by manager_name; 
+
+ii) select emp_sal from employee
+    limit 1 offset 3;
