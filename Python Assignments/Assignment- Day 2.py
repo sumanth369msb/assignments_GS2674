@@ -9,8 +9,6 @@
 # Use 'calculate_emp_salary' method takes two arguments: salary and hours_worked, which is the number of hours worked by the employee. If the number of hours worked is more than 50, the method computes overtime and adds it to the salary. Overtime is calculated as following formula:
 # overtime = hours_worked - 50
 # Overtime amount = (overtime * (salary / 50))
-
-
 class Employee:
     def __init__(self,emp_id,emp_name,emp_salary,emp_department):
         self.emp_id=emp_id
@@ -23,10 +21,9 @@ class Employee:
         print(emp_obj)
     def calculate_emp_salary(self,salary,overtime):
         if overtime>50:
-            overtime_amount=overtime*self.salary/50
-            return salary+overtime_amount
-        return salary
-
+            overtime_amount=overtime*self.emp_salary/50
+            return self.emp_salary+overtime_amount
+        return self.emp_salary
 
 
 emp1=Employee("ADAMS", "E7876", 50000, "ACCOUNTING")
@@ -36,8 +33,19 @@ emp4=Employee("SMITH", "E7698", 55000, "OPERATIONS")
 
 emp=[emp1,emp2,emp3,emp4]
 
+####   printing employee details
 for i in emp:
-    i.
+    print("Employee Details: \n")
+    print(i.emp_id,i.emp_name,i.emp_salary,i.emp_department)
+    print("\n")
+
+#### calculating over time
+emp2.calculate_emp_salary(45000,70)
+
+### assign department
+
+emp3.assign_department("ENGINEERING")
+
 
 
 
