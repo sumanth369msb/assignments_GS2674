@@ -18,7 +18,7 @@ class Employee:
         self.emp_salary=emp_salary
         self.emp_department=emp_department
     def assign_department(self,change_emp_department):
-        self.emp_department = new_department
+        self.emp_department = change_emp_department
     def print_employee_details(self,emp_obj):
         print(emp_obj)
     def calculate_emp_salary(self,salary,overtime):
