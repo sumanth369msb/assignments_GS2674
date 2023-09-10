@@ -22,6 +22,18 @@ except KeyboardInterrupt:
     print("\nInput canceled by the user.")
 
 
+# 3. Write a Python program that opens a file and handles a UnicodeDecodeError exception if there is an encoding issue.
+
+try:
+    filePath = input("Enter the file path: ")
+    with open(filePath, 'r') as file:
+        file1 = file.read()
+        print(file1)
+except FileNotFoundError:
+    print("The file not found.")
+except UnicodeDecodeError as e:
+    print(f"Unicode decode error - {e}")
+
             
 #####4.Write a Python program that executes a list operation and handles an AttributeError exception if the attribute does not exist.
 
